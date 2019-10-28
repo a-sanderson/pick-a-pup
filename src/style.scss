@@ -1,0 +1,357 @@
+$titleFont: "Roboto Condensed", sans-serif;
+$headingFont: "Barlow Semi Condensed", sans-serif;
+
+*{
+    margin: 0;
+    input{
+        height: 3em;
+        border: 3px lightsalmon ridge;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    button{
+        border: 3px ridge black;
+        background-color: white;
+        border-radius: 7px;
+    }
+    p{
+        font-family: $headingFont;
+    }
+    h1{
+        font-family: $headingFont;
+    }
+    h3{
+        font-family: $headingFont;
+    }
+    h5{
+        font-family: $titleFont;
+        font-size: 1.2em;
+    }
+}
+.smallIcon{
+    display: block;
+}
+.largeIcon{
+    display: none;
+}
+.header1{
+    display: flex;
+}
+.largeHeader{
+    display: none !important ;
+    box-shadow: 0 6px 2px -2px rgba(0,0,0,.2);
+    a{
+        text-decoration: none;
+        color: lightsalmon;
+        font-family: $headingFont;
+        font-size: 2.5em;
+    }
+}
+.navHidden{
+    display:flex;
+    flex-direction: column;
+    left: 0;
+    height: 50%;
+    width: 80%;
+    
+    // z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .6;
+    overflow-x: hidden;
+    transition: 0.5s all ease-out;
+    padding-top: 60px;
+    border-radius: 3px;
+    position: fixed;
+    margin-top: 85px;
+
+    z-index: 6;
+    a{
+        z-index: 2;
+       
+        text-decoration:none;
+        color: lightsalmon;
+        font-size: 300%;
+    }
+    a:hover{
+        color:white;
+    }
+
+}
+.nav{
+    // display:none;
+    flex-direction: column;
+    
+    height: 0%;
+    width: 0%;
+    
+    // z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s all ;
+    // padding-top: 60px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+    a{
+        text-decoration:none;
+    }
+    
+    
+}
+.imageContainer{
+    height:100%;
+    width: 20%
+}
+.imageFit{
+    height: 100%;
+    width: 100%
+}
+.headerContainer{
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 3px black ridge;
+    position: fixed;
+    z-index: 5;
+    // margin-bottom:85px;
+    background-color: white;
+    h1{
+        font-family: $titleFont;
+        font-size: 3em;
+
+    }
+}
+// "Open Sans", san-serif
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+
+    padding-top: 85px;
+}
+.footer{
+    height: 10vh;
+    width: 100vw;
+    border-top: 3px black ridge;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+
+}
+// ADOPT PAGE STYLING
+
+.adoptPage{
+   height: 2500px;
+}
+
+.iconContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    a{
+        text-decoration: none;
+        color: hotpink;
+        
+    }
+}
+.breedLink{
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+    color: lightsalmon;
+    margin: 15px;
+    font-size: 1.5em !important;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     
+}
+.locationCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 5px;
+    h2{
+        font-size: 1.2em !important
+    }
+    p{
+        font-size: 1.5em !important
+    }
+}
+.findMember{
+    font-family: $headingFont;
+    font-style: italic;
+}
+
+.locationList{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 5000px;
+   margin: auto;
+
+   a{
+       text-decoration: none;
+       color: lightsalmon;
+       font-size: 1.5em;
+       margin-bottom: 5px;
+       text-shadow:
+   -.5px -.5px 0 #000,  
+    .5px -.5px 0 rgb(54, 53,53),
+    -.5px .5px 0 rgb(54, 53, 53),
+     .5px 1px 0 rgb(66, 63, 63);
+     
+   }
+
+}
+
+.adoptHero{
+    height: 100vh;
+    width:100vw;
+    position: relative;
+    background-image: url(./images/adoptBackground.jpeg);
+    // background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url(./images/adoptBackground.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    opacity: .7;
+    div{
+        position: absolute;
+        right: 5px;
+        bottom: 130px;
+        width: 60%;
+        h2{
+            color: white;
+            font-family: $titleFont;
+        }
+    }
+    
+    
+    h1{
+        font-family: $headingFont;
+        // z-index: 5;
+        color: white;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 90px;
+        padding-top: 15px;
+        
+    }
+
+}
+
+.list{
+    margin-bottom: 20px;
+    align-items: center;
+    li{
+        font-family: "Roboto"
+    }
+
+}
+
+.searchAdoptDisplay{
+  width: 100%;
+  height: 400px;  
+}
+.locationCard{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    width:95%;
+    height: 150px;
+    border: 1px lightgray ridge;
+    border-radius: 5px;
+    // margin: auto;
+    // margin-top: 7.375px;
+    // margin-bottom: 7.375px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+// individual animal component
+
+.animalContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25%;
+    margin-bottom: 20%;
+    height: 600px;
+    width: 100vw;
+}
+.innerAnimalC{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dogImgC{
+    height: 150px;
+    width: 100px;
+    border: 5px solid #3e2b14;
+    padding: 3px;
+    border-radius: 10px 2px 10px 2px;
+    // position: absolute;
+}
+@media only screen and (min-width: 1000px) {
+    *{
+        p{
+            font-size: 2em;
+        }
+        h2{
+           font-size: 4em;
+        }
+        input{
+            height: 3em;
+        }
+        h1{
+            font-size: 3em;
+        }
+    }
+    .list{
+        li{
+            font-size: 2em;
+        }
+    }
+    .dogImgC{
+        height: 325px;
+        width: 250px;
+        border: 12px inset #3e2b14;
+        padding: 10px;
+        border-radius: 40px 8px 40px 8px;
+
+    }
+    .header1{
+        display: none;
+    }
+    .largeHeader{
+        display: flex !important;
+        top: 0;
+    }
+    .smallIcon{
+        display:none;
+    }
+    .largeIcon{
+        display: block;
+    }
+
+}
