@@ -1,11 +1,8 @@
 import React from "react"
 import axios from "axios"
 import AdoptSearchBar from "./AdoptSearchBar.js"
-import dogOwners from "./images/dogOwners.jpeg"
-import hs from "./images/humaneSocietynew.jpg"
 import LocationCard from "./LocationCard.js"
-import dogGroom from "./images/dogGroom.webp"
-import pup from "./images/pup.jpeg"
+
 
 
 
@@ -34,9 +31,10 @@ class Adopt extends React.Component{
             this.setState({
                 token: res.data.access_token
             })
-            console.log(this.state.token)
+            // console.log(this.state.token)
         } )
         .catch(err => console.log(err))
+        console.log("working")
         
     }
     handleChange = e => {
