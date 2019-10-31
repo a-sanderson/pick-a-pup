@@ -42,9 +42,9 @@ export default class Info extends React.Component {
         
 
         return(
-            <main>
-                <h1>Breed Info</h1>
-                <p>The path to a perfect pup fit for your home starts here with some research!
+            <main className="infoPage">
+                <h1 style={{marginTop: 70}}>Breed Info</h1>
+                <p style={{lineHeight: 1.5}}>The path to a perfect pup fit for your home starts here with some research!
                 With our Breed Research tool, you can narrow down a dog with the perfect size, temperament and life-span for your family.
                 You work a ton and will not have time to take your new family member on daily multi-mile hikes? No worries! Find a dog that does not 
                 require a ton of exercise! Are you expecting a newborn soon? Perfect, find a dog breed that is great with children. It is important 
