@@ -17,19 +17,23 @@ class Adopt extends React.Component{
 
         }
     }
+    fetchToken = async () =>
+        await(await fetch("/.netlify/functions/tokenHider", {method: 'POST'})).json();
+
     componentDidMount(){
-       const credentials = {
-            id:process.env.REACT_APP_ID,
-            secret:process.env.REACT_APP_SECRET
-        }
-        axios.post("https://api.petfinder.com/v2/oauth2/token", {
-            grant_type: "client_credentials",
-            client_id: credentials.id,
-            client_secret: credentials.secret
-        })
-        .then(res=> {
+    //    const credentials = {
+    //         id:process.env.REACT_APP_ID,
+    //         secret:process.env.REACT_APP_SECRET
+    //     }
+    //     axios.post("http://api.petfinder.com/v2/oauth2/token", {
+    //         grant_type: "client_credentials",
+    //         client_id: credentials.id,
+    //         client_secret: credentials.secret
+    //     })
+       
+        this.fetchToken().then(data => {
             this.setState({
-                token: res.data.access_token
+                token: data.access_token
             })
             // console.log(this.state.token)
         } )
